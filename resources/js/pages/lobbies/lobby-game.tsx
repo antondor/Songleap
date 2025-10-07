@@ -129,11 +129,11 @@ export default function LobbyGame({ lobby }: { lobby: LobbyWithHost }) {
                 <div className="mt-4 text-center">
                     {result.winner ? (
                         <p className="font-semibold text-green-600">
-                            Победитель: {result.winner.username}
+                            Winner: {result.winner.username}
                         </p>
                     ) : (
                         <p className="font-semibold text-red-500">
-                            В этом раунде победителей нет
+                            No winner in this round
                         </p>
                     )}
                 </div>

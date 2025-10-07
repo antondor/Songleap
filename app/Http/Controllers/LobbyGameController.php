@@ -81,7 +81,7 @@ class LobbyGameController extends Controller
                 'winner'  => $winner,
             ]));
 
-            StartNextLobbyQuestion::dispatch($lobbyId, $user->id)->delay(now()->addSeconds(3));
+            StartNextLobbyQuestion::dispatch($lobbyId, $user->id)->delay(now()->addSeconds(2));
         }
 
         return response()->json(['correct' => $isCorrect]);
